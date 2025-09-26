@@ -3,6 +3,7 @@
     android:orientation="vertical"
     android:gravity="center"
     android:padding="24dp"
+    android:background="#FAFAFA"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -11,6 +12,7 @@
         android:text="Phạm Minh Chính"
         android:textSize="24sp"
         android:textStyle="bold"
+        android:textColor="#2E7D32"
         android:gravity="center"
         android:layout_marginBottom="4dp"
         android:layout_width="wrap_content"
@@ -20,6 +22,7 @@
         android:id="@+id/tvMSSV"
         android:text="23115053122207"
         android:textSize="18sp"
+        android:textColor="#4CAF50"
         android:gravity="center"
         android:layout_marginBottom="30dp"
         android:layout_width="wrap_content"
@@ -30,9 +33,21 @@
         android:text=" Chào mừng đến với FoodApp "
         android:textSize="20sp"
         android:textStyle="bold"
+        android:textColor="#333333"
         android:gravity="center"
         android:layout_marginBottom="40dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btnViewMenu"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Xem Menu"
+        android:textSize="16sp"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#81C784" />
+
 
 </LinearLayout>

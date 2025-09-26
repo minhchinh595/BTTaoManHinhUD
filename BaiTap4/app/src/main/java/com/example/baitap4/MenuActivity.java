@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.Toast;
 
 public class MenuActivity extends AppCompatActivity {
 
@@ -28,5 +29,10 @@ public class MenuActivity extends AppCompatActivity {
                 android.R.layout.simple_list_item_1, foods);
 
         listViewMenu.setAdapter(adapter);
+
+        listViewMenu.setOnItemClickListener((parent, view, position, id) -> {
+            String item = foods[position];
+            Toast.makeText(MenuActivity.this, "Bạn chọn: " + item, Toast.LENGTH_SHORT).show();
+        });
     }
 }
